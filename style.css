@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Coronet';
+    src: url(Coronet-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #B7B7B7;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Coronet';
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.container-login {
+    flex: 1;
+    max-width: 440px;
+    margin: 60px auto;
+    background: white;
+    padding: 50px 45px;
+    border: 2px solid #B7B7B7;
+}
+
+.container-login h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.grupo-formulario {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+.campo-input {
+    position: relative;
+}
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #e5e5e5;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.grupo-formulario input:focus {
+    border-color: #0095ff;
+    background-color: white;
+}
+
+.esqueceu-senha {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.esqueceu-senha a {
+    color: #ff4757;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.botao {
+    width: 100%;
+    padding: 16px;
+    background: #09A1FF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    position: relative;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    color: #999;
+    font-size: 13px;
+}
+
+.divisor::before,
+.divisor::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #e5e5e5, transparent);
+}
+
+.divisor span {
+    padding: 0 20px;
+}
+
+.link-cadastro {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.link-cadastro a {
+    color: #0095ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}

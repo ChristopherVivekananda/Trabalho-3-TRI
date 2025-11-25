@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Chamber Co.</title>
+    <link rel="icon" type="image/x-icon" href="telinha.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="#" class="logo">Echo Chamber Co.</a>
+</nav>
+
+<div class="container-login">
+    <h2>Faça Login</h2>
+    <p class="subtitulo">Entre para compartilhar suas configurações</p>
+        
+<form id="formLogin">
+    <div class="grupo-formulario">
+        <label for="email">Email:</label>
+        <div class="campo-input">
+            <input type="email" id="email" placeholder="seu@email.com" required>
+        </div>
+    </div>
+
+<div class="grupo-formulario">
+    <label for="senha">Senha:</label>
+        <div class="campo-input">
+            <input type="password" id="senha" placeholder="Sua senha" required>
+        </div>
+    <div class="esqueceu-senha">
+        <a href="#" onclick="handleForgotPassword(event)">Esqueci a senha</a>
+    </div>
+</div>
+
+<button type="submit" class="botao"><span>Entrar</span></button>
+
+</form>
+
+<div class="divisor"><span>ou</span></div>
+
+<div class="link-cadastro">
+    Não tem uma conta?
+    <a href="#" onclick="handleSignup(event)">Cadastre-se</a>
+</div>
+
+</div>
+
+<footer>
+    <div class="logo">Echo Chamber Co.</div>
+</footer>
+
+<!-- SEU SCRIPT -->
+<script type="module" src="script.js" defer></script>
+
+</body>
+</html>
