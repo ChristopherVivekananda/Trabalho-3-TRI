@@ -1,4 +1,4 @@
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -15,7 +15,7 @@
         nav {
             background-color: white;
             padding: 20px 40px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-bottom: 1px solid #B7B7B7;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,7 +69,6 @@
         .publications-list {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
             overflow: hidden;
             margin-bottom: 50px;
         }
@@ -153,14 +152,13 @@
         }
 
         footer {
-            background-color: white;
+            background-color: #e0e0e0;
             text-align: center;
             padding: 30px;
-            box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
             margin-top: auto;
         }
 
         footer .logo {
-            color: #000000;
+            color: #333;
             font-size: 22px;
         }

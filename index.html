@@ -10,51 +10,66 @@
 </head>
 <body>
 
-<nav>
-    <a href="#" class="logo">Echo Chamber Co.</a>
-</nav>
+    <nav>
+        <div class="logo">Echo Chamber Co.</div>
+    </nav>
 
-<div class="container-login">
-    <h2>Faça Login</h2>
-    <p class="subtitulo">Entre para compartilhar suas configurações</p>
-        
-<form id="formLogin">
-    <div class="grupo-formulario">
-        <label for="email">Email:</label>
-        <div class="campo-input">
-            <input type="email" id="email" placeholder="seu@email.com" required>
+    <div class="container-login">
+        <div class="cartao-login">
+
+            <div class="cabecalho-login">
+                <h1>Faça Login</h1>
+            </div>
+            
+            <form class="formulario-login" id="formLogin">
+                <div class="grupo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" autocomplete="off">
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" autocomplete="off">
+                </div>
+                
+                <button type="submit" class="botao-login">Entrar</button>
+            </form>
+            
+            <div class="links-login">
+                <a href="#" id="linkEsqueciSenha">Esqueci a senha</a>
+                <a href="#" id="linkCriarConta">Não tem login? Faça o cadastro!</a>
+            </div>
+
         </div>
     </div>
 
-<div class="grupo-formulario">
-    <label for="senha">Senha:</label>
-        <div class="campo-input">
-            <input type="password" id="senha" placeholder="Sua senha" required>
-        </div>
-    <div class="esqueceu-senha">
-        <a href="#" onclick="handleForgotPassword(event)">Esqueci a senha</a>
-    </div>
-</div>
+    <footer>
+        <div class="logo">Echo Chamber Co.</div>
+    </footer>
 
-<button type="submit" class="botao"><span>Entrar</span></button>
-
-</form>
-
-<div class="divisor"><span>ou</span></div>
-
-<div class="link-cadastro">
-    Não tem uma conta?
-    <a href="#" onclick="handleSignup(event)">Cadastre-se</a>
-</div>
-
-</div>
-
-<footer>
-    <div class="logo">Echo Chamber Co.</div>
-</footer>
-
-<!-- SEU SCRIPT -->
-<script type="module" src="script.js" defer></script>
-
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById("email").value.trim();
+            const senha = document.getElementById("senha").value.trim();
+            
+            console.log("Email:", email);
+            console.log("Senha:", senha);
+            
+            if (email === "teste@gmail.com" && senha === "123456") {
+                localStorage.setItem("email", email);
+                alert("Login realizado! Redirecionando...");
+                window.location.href = "principal.html";
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erro no login',
+                    text: 'Email ou senha incorretos!',
+                    confirmButtonColor: '#00a8ff'
+                });
+            }
+        });
+    </script>
 </body>
 </html>
