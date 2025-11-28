@@ -42,22 +42,39 @@ nav {
     font-size: 14px;
 }
 
-.nav-menu a:hover {
-    text-decoration: underline;
-}
-
-.welcome {
+.button-section {
     text-align: center;
     padding: 60px 20px;
-    background: white;
-    margin-top: 20px;
 }
 
-.welcome h1 {
+.btn-publicacao {
+    background: #00a8ff;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-publicacao:hover {
+    background: #0090e0;
+}
+
+.publications-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.publications-title h1 {
     font-size: 28px;
     font-weight: normal;
     color: black;
 }
+
 
 .recommendations {
     background: white;
@@ -121,45 +138,11 @@ nav {
     margin-left: 1700px;
 }
 
-.search-section {
-    background: #3AF262;
-    padding: 100px 50px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.search-title {
-    color: white;
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 45px;
-    line-height: 1.2;
-}
-
-.search-box {
-    position: relative;
-    max-width: 380px;
-    margin: 0 auto;
-}
-
-.search-box input {
-    width: 100%;
-    padding: 18px 50px 18px 22px;
-    border: none;
-    border-radius: 25px;
-    font-size: 14px;
-    outline: none;
-}
-
-.search-box input::placeholder {
-    color: #d0d0d0;
-}
-
 footer {
     background: #E2E2E2;
     padding: 20px 50px;
     text-align: center;
-    
+    margin-top: 217.4px;
 }
 
 .footer-logo {

@@ -31,34 +31,41 @@ nav {
     transition: opacity 0.3s;
 }
 
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
 .form-container {
-    max-width: 450px;
-    margin: 60px auto;
+    max-width: 650px;
+    margin: 50px auto;
     background: white;
     border: 1px solid #ddd;
     padding: 40px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 30px;
-    color: black;
-}
-
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 label {
     display: block;
     font-size: 14px;
     color: black;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-input {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
     width: 100%;
     padding: 12px 18px;
     border: 1px solid #ccc;
@@ -68,34 +75,50 @@ input {
     transition: border 0.3s;
 }
 
-input:focus {
+input:focus,
+select:focus {
     border-color: #00a8ff;
 }
 
-.link-text {
-    font-size: 12px;
-    color: #ff0000;
-    text-decoration: underline;
+select {
     cursor: pointer;
-    margin-top: 5px;
-    display: inline-block;
+    appearance: none;
+    background: white;
+    padding-right: 40px;
 }
 
-.link-text:hover {
-    color: #cc0000;
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.control-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-item label {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.control-item input {
+    padding: 10px 15px;
+    font-size: 13px;
 }
 
 .btn-submit {
-    width: 100%;
-    padding: 14px;
     background: #00a8ff;
     color: white;
+    padding: 14px 40px;
     border: none;
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
+    float: right;
     margin-top: 20px;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .btn-submit:hover {
@@ -106,7 +129,7 @@ footer {
     background: #E2E2E2;
     padding: 20px 50px;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 309px;
 }
 
 .footer-logo {
